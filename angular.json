@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "url-shortner-fe": {
+    "url-shortener-fe": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/url-shortner-fe",
+            "outputPath": "dist/url-shortener-fe",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "url-shortner-fe:build:production"
+              "buildTarget": "url-shortener-fe:build:production"
             },
             "development": {
-              "buildTarget": "url-shortner-fe:build:development"
+              "buildTarget": "url-shortener-fe:build:development"
             }
           },
           "defaultConfiguration": "development"
