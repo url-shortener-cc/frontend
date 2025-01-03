@@ -1,2 +1,2 @@
 # frontend
-Repo for frontend of URL shortner
+Repo for frontend of URL shortener
