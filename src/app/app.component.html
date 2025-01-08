@@ -1,0 +1,30 @@
+<main class="main">
+  <div class="content">
+    <div class="title-head">
+      <h1>{{ title }}</h1>
+      <!-- <p>Shorten your URL</p> -->
+    </div>
+    <div class="divider" role="separator" aria-label="Divider"></div>
+    <div class="fields">
+      <input
+        class="input"
+        name="longUrl"
+        type="text"
+        placeholder="Enter your URL"
+        [(ngModel)]="longUrl"
+        (input)="urlOnChange(longUrl)"
+      />
+      <button type="button" class="button" (click)="getShortUrl()">
+        Get Short Url
+      </button>
+    </div>
+    <div class="short-url" *ngIf="shortUrl" (click)="getLongUrl()">
+      Short URL is:
+      <span (click)="getShortUrl()">
+        {{ shortUrl }} 
+      </span>
+    </div>
+  </div>
+</main>
+
+<router-outlet />

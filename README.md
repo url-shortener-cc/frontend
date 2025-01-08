@@ -1,2 +1,3 @@
-# frontend
-Repo for frontend of URL shortener
+# UrlShortenerFe
+
+This Angular project is the frontend part of URL Shortener
